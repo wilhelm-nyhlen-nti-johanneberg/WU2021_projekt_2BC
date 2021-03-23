@@ -10,15 +10,14 @@
 #Homecontainer {
     
     display: grid;
-    height: 200vh;
+    height: 220vh;
     width: 100vw;
 
-    grid-template-rows: 70px 100vh 7.5% 7.5% 30% 300px;
+    grid-template-rows: 70px 100vh 12% 30% 300px;
     grid-template-columns: 1;
     grid-template-areas: 
     '. .'
     's1 s1'
-    '. .'
     'w1 w1'
     's2 s2'
     'fo fo'
@@ -97,10 +96,16 @@
     background-image: url('../img/welcome.jpg');
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
 }
 
 #welcome2 {
     grid-area: s2;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: tomato;
 }
 
@@ -110,6 +115,12 @@
     justify-content: center;
     align-items: center; 
     background-color: white;
+}
+
+.exworks img {
+    height: 200px;
+    margin: 10px;
+    width: auto;
 }
 
 
