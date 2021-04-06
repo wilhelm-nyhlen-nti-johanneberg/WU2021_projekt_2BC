@@ -96,7 +96,23 @@ body {
 .side-nav ul {
     text-align: center;
 }
-    
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidenav_links li{
+    opacity: 0;
+}
+
+.sidenav_links div {
+    padding: 30px 0 30px 0;
+    background-color: white;
+    border-bottom: 1px solid;
+}
+   
 
 .fade-layer{
     position: fixed;
@@ -108,6 +124,11 @@ body {
     display: none;
     z-index: 5;
 }
+
+
+
+
+/* Följande kod hanterar home-sidan */
 
 
 #welcome {
@@ -160,8 +181,6 @@ body {
     margin: 10px;
     width: 120px;
 }
-
-
 
 
 #newsdisplay header {
@@ -270,30 +289,6 @@ ol {
     font-size: 1.2rem;
     margin: 0 10px;
     text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.sidenav_links li{
-    opacity: 0;
-}
-
-.sidenav_links div {
-    padding: 30px 0 30px 0;
-    background-color: white;
-    border-bottom: 1px solid;
 }
 
 
@@ -599,7 +594,8 @@ textarea.contact-form-text {
 
 
 
-/*Alla media queries läggs längst ned för att inte riskera att koden blir overwritten */
+/* Media queries */
+
 
 @media (max-width:1230px) {
 
@@ -612,6 +608,7 @@ textarea.contact-form-text {
     }
 
 }
+
 
 @media (min-width:768px) {
     
@@ -643,41 +640,39 @@ textarea.contact-form-text {
     #contact {
         flex-direction: row;
         justify-content: center;
-        padding: 40px;
+        padding: 20px;
     }
 
     #contact-title h1 {
-        font-size: 5rem ;
+        font-size: 4rem ;
     }
 
     #contact p{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     
     .contact-form-text {
         display: inline-block;
         width: 100%;
-        margin: 15px 0;
-        padding: 25px 35px;
+        margin: 5px 0;
+        padding: 15px 25px;
         transition: 0.5s;
-        font-size: 18px
+        font-size: 15px
         
     }
 
     .contact-form {
-        margin: 0 50px;
+        margin: 0 30px;
     }
 
     textarea.contact-form-text {
-        height: 170px;
+        height: 150px;
     }
 
     #contact-title {
         margin-top: 50px;
     
     }
-
-
 }
 
 
@@ -804,6 +799,53 @@ textarea.contact-form-text {
     }
     #about p {
         font-size: 1.2rem;
+    }
+
+
+    /* Följande gäller contact sidan */
+
+
+    #Contactcontainer {
+       
+        height: 150vh;
+        grid-template-rows: 70px 40vh 80vh 300px;
+    }
+
+    #contact {
+        flex-direction: row;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    #contact-title h1 {
+        font-size: 5rem ;
+    }
+
+    #contact p{
+        font-size: 1.2rem;
+    }
+    
+    .contact-form-text {
+        display: inline-block;
+        width: 100%;
+        margin: 15px 0;
+        padding: 25px 35px;
+        transition: 0.5s;
+        font-size: 18px
+        
+    }
+
+    .contact-form {
+        margin: 0 50px;
+    }
+
+    textarea.contact-form-text {
+        height: 170px;
+    }
+
+    #contact-title {
+        margin-top: 50px;
+    
     }
     
 
