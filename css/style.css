@@ -392,7 +392,7 @@ ol {
 #aboutwelcome {
     grid-area: aw;
     background: chartreuse;
-    background-image: url('../img/unsplash32.jpg');
+    background-image: url('../img/unsplash3compr.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -576,6 +576,14 @@ textarea.contact-form-text {
 
 #morecontactinfo {
     padding-top: 30px;
+}
+
+.contact-form-btn {
+    padding: 12px 50px;
+    border: 0;
+    background-color: rgb(59, 73, 99);
+    color:rgb(255, 255, 255);
+    transition: 0.5s
 }
 
 
