@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" as="image" href="img/welcome3.jpg"/> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Filmstudios</title>
 </head>
 <body>
 
     <nav class="side-nav">
-        <ul>
-            <li><a href="index.html">Hem</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">Om Oss</a></li>
-            <li><a href="#news">Nyheter</a></li>
-            <li><a href="#contact">Kontakt</a></li>
+        <ul class="sidenav_links">
+            <li><div><a href="index.html">Hem</a></div></li>
+            <li><div><a href="portfolio.html">Portfolio</a></div></li>
+            <li><div><a href="about.html">Om oss</a></div></li>
+            <li><div><a href="news.html">Nyheter</a></div></li>
+            <li><div><a href="contact.html">Kontakt</a></div></li>
         </ul>
     </nav>
 
@@ -28,16 +30,16 @@
         <header class="mainheader">
             
             <div class="logo-container">
-                <a href="index.html"><img src="img/studiologga.png" alt="logga" class="logo"></a>
+                <a href="index.html"><img src="img/studiologga.png" alt="studiologga" class="logo"></a>
             </div>
 
             <nav class="wide-nav">
                 <ul>
                     <li><a href="index.html">Hem</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#about">Om Oss</a></li>
-                    <li><a href="#news">Nyheter</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">Om Oss</a></li>
+                    <li><a href="news.html">Nyheter</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
                 </ul>
             </nav>
             <div class="menu-button">
@@ -48,40 +50,76 @@
             <h1 id="welcometext">Welcome to Film Animation Studios </h1>
         </section>
         <div id="workstitle">
-            <h1>Works</h1>
-            <h2>click to see more</h2>
+            <h1><a href="portfolio.html">Works</a></h1>
+            <h2>(click to see more)</h2>
         </div>
-        <section id="welcome2">
-            <figure class="exworks">
-                <a href="index.html"><img src="img/ex1.jpg" alt="logga" class="logo"></a>
-                <figcaption>lorem ipsum 1</figcaption>
+        
+        <section id="worksdisplay">
+            <figure class="exworksdisplay">
+                <a href="index.html"><img src="img/exwork1.jpg" alt="ex film 1"></a>
+                <figcaption class="displayworkscaption">Film 1</figcaption>
             </figure>
         
-            <figure class="exworks">
-                <a href="index.html"><img src="img/ex1.jpg" alt="logga" class="logo"></a>
-                <figcaption>lorem ipsum 2</figcaption>
+            <figure class="exworksdisplay">
+                <a href="index.html"><img src="img/exwork2.jpg" alt="ex film 2"></a>
+                <figcaption class="displayworkscaption">Film 2</figcaption>
             </figure>
         
-            <figure class="exworks">
-                <a href="index.html"><img src="img/ex1.jpg" alt="logga" class="logo"></a>
-                <figcaption>lorem ipsum 3</figcaption>
+            <figure class="exworksdisplay">
+                <a href="index.html"><img src="img/exwork3.jpg" alt="ex film 3"></a>
+                <figcaption class="displayworkscaption">Film 3</figcaption>
             </figure>
         
-            <figure class="exworks">
-                <a href="index.html"><img src="img/ex1.jpg" alt="logga" class="logo"></a>
-                <figcaption>lorem ipsum 4</figcaption>
-
+            <figure class="exworksdisplay">
+                <a href="index.html"><img src="img/exwork4.jpg" alt="ex film 4"></a>
+                <figcaption class="displayworkscaption">Film 4</figcaption>
             </figure>  
         </section>
-        <div id="welcome3">
+        <div id="newsdisplay">
+            
+            <div id="newsdisplaycontainer">
+                <h1><a href="news.html">NEWS</a></h1>
+                <h2>(click to see more)</h2>
+            </div>
+
+            <ol>
+                <li>
+                    <p class="newstitle">2021-04-04</p>
+                    <p class="newssection">New feature film announced, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cumque voluptas et exercitationem ex modi eos facilis fugit, quos officiis.
+                </li>
+                <li>
+                    <p class="newstitle">2021-04-01</p>
+                    <p class="newssection">We are now looking for graphic designers, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cumque voluptas et exercitationem ex modi eos facilis fugit, quos officiis.
+                </li>
+                <li>
+                    <p class="newstitle">2021-03-01</p>
+                    <p class="newssection">Filmstudios is expanding, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cumque voluptas et exercitationem ex modi eos facilis fugit.
+                </li>
+
+
+            </ol>
+
         </div>
         <footer class="mainfooter">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            <div class="innerfooter">
+                
+                <ul class="socialmedia">
+                    <li><a href="img/dwaynewide.png"><img src="img/fbicon.png" alt="facebook logga"></a></li>
+                    <li><a href="img/dwaynewide.png"><img src="img/insticon.png" alt="instagram logga" ></a></li>
+                    <li><a href="img/dwaynewide.png"><img src="img/twicon.png" alt="twitter logga" ></a></li>
+                    <li><a href="img/dwaynewide.png"><img src="img/yticon.png" alt="youtube logga"></a></li>
+                </ul>
+                
+                <ul class="footernav">
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">Om Oss</a></li>
+                    <li><a href="news.html">Nyheter</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+                <h3> © Copyright Filmstudio Inc</h3>
+            </div>
+            
         </footer>
     </div>
     
